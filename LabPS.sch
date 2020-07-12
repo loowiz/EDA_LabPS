@@ -91,17 +91,6 @@ Wire Wire Line
 	2750 3850 2750 3500
 Wire Wire Line
 	2750 3500 2650 3500
-$Comp
-L Connector:Screw_Terminal_01x02 J2
-U 1 1 5F05E267
-P 1400 3300
-F 0 "J2" H 1318 2975 50  0000 C CNN
-F 1 "24Vac" H 1318 3066 50  0000 C CNN
-F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 1400 3300 50  0001 C CNN
-F 3 "~" H 1400 3300 50  0001 C CNN
-	1    1400 3300
-	-1   0    0    1   
-$EndComp
 Wire Wire Line
 	2150 3500 2250 3500
 Wire Wire Line
@@ -117,8 +106,6 @@ Wire Wire Line
 	2250 4000 1650 4000
 Wire Wire Line
 	1650 4000 1650 3300
-Wire Wire Line
-	1650 3300 1600 3300
 Connection ~ 2250 3850
 Wire Wire Line
 	2250 3850 2350 3850
@@ -175,7 +162,7 @@ U 1 1 5F06BED7
 P 3200 4250
 F 0 "R3" H 3270 4296 50  0000 L CNN
 F 1 "2k2" H 3270 4205 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0918_L18.0mm_D9.0mm_P30.48mm_Horizontal" V 3130 4250 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0614_L14.3mm_D5.7mm_P15.24mm_Horizontal" V 3130 4250 50  0001 C CNN
 F 3 "~" H 3200 4250 50  0001 C CNN
 	1    3200 4250
 	1    0    0    -1  
@@ -1024,8 +1011,6 @@ Wire Wire Line
 Wire Wire Line
 	9100 4000 9100 4300
 Wire Wire Line
-	1600 3200 2250 3200
-Wire Wire Line
 	10000 3050 9600 3050
 $Comp
 L Connector:Screw_Terminal_01x02 J1
@@ -1089,5 +1074,20 @@ F 2 "Package_TO_SOT_THT:TO-218-3_Vertical" H 8850 2675 50  0001 L CIN
 F 3 "http://www.onsemi.com/pub_link/Collateral/TIP3055-D.PDF" H 8650 2750 50  0001 L CNN
 	1    8650 2750
 	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	1650 3300 1600 3300
+Wire Wire Line
+	1600 3200 2250 3200
+$Comp
+L Connector:Screw_Terminal_01x02 J2
+U 1 1 5F05E267
+P 1400 3200
+F 0 "J2" H 1318 2875 50  0000 C CNN
+F 1 "24Vac" H 1318 2966 50  0000 C CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 1400 3200 50  0001 C CNN
+F 3 "~" H 1400 3200 50  0001 C CNN
+	1    1400 3200
+	-1   0    0    -1  
 $EndComp
 $EndSCHEMATC
